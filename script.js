@@ -11,3 +11,19 @@ function teste_while() {
         i--;
     }
 }
+
+function teste_do_while() {
+    var i = 0;
+    do {
+        document.write(i, "<br>");
+        i++;
+    } while (i<=10);
+}
+
+function tabuada_8() {
+    var i = 0;
+    do {
+        document.write(`${i} x 8 = `, i * 8, "<br>");
+        i++
+    } while(i <= 10);
+}

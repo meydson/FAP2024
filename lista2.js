@@ -12,3 +12,4 @@ function exercicio4() {
     var altura = parseInt(prompt("informe o valor da altura do triângulo!"));
     document.write(`O valor da área do triângulo informado é ${(base*altura)/2}`);
 }
+

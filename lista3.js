@@ -45,3 +45,76 @@ function questao04() {
     }
     document.write(`O valor da soma dos 10 primeiros números inteiros é ${soma}`);
 }
+
+function questao05() {
+    var valor = parseInt(prompt("Insira o valor ou 999 para exibir a soma e a média dos valores informados!"));
+    var soma = 0;
+    var media;
+    var contador = 0;
+    while (valor != 999) {
+        contador++;
+        soma = soma + valor;
+        valor = parseInt(prompt("Insira o valor ou 999 para exibir a soma e a média dos valores informados!"));
+    }
+    media = soma / contador;
+    document.write(`A soma dos valores digitados é ${soma} e a média é ${media}`);
+}
+
+function questao06() {
+    var conjunto_a = [];
+    var conjunto_b = [];
+
+    for (i = 0; i < 8; i++) {
+        conjunto_a.push(parseInt(prompt("Digite o valor desejado")));
+    }
+    
+    for (i = 0; i < 8; i++) {
+        conjunto_b.push(conjunto_a[i] * 4);
+    }
+    document.write(conjunto_b);
+}
+
+function questao07() {
+    var conj_a = [];
+    var conj_b = [];
+    var conj_c = [];
+
+    for (i = 0; i < 20; i++) {
+        conj_a.push(parseInt(Math.random() * 100));
+        conj_b.push(parseInt(Math.random() * 100));
+        conj_c.push(conj_a[i] - conj_b[i]);
+    }
+
+    document.write(conj_c);
+}
+
+function questao08() {
+    var nome = prompt("Informe seu nome!");
+    var idade = parseInt(prompt("Informe sua idade"));
+
+    document.write(`${nome} possui ${idade * 365} dias de vida`);
+}
+
+function questao09() {
+    var valor_litro = parseFloat(prompt("Informe o valor do litro de gasolina!"));
+    var valor_total = parseFloat(prompt("Informe o valor total pago!"));
+    var litros = valor_total/valor_litro;
+
+    document.write(`Você abasteceu no total ${litros.toFixed(2)} litros`);
+}
+
+function questao10() {
+    var num1 = parseInt(prompt("Informe o primeiro número!"));
+    var num2 = parseInt(prompt("Informe o segundo valor"));
+
+    while (num1 <=0) {
+        alert("O primeiro digitado é menor que zero!");
+        num1 = parseInt(prompt("Informe o primeiro número!"));
+    }
+    while (num2 <= 0) {
+        alert("O segundo digitado é menor que zero!");
+        num2 = parseInt(prompt("Informe o segundo valor"));
+    }
+
+    document.write(`O valor de Z é ${(num1**2) + (num2**2)}`);
+}

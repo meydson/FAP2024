@@ -118,3 +118,15 @@ function questao10() {
 
     document.write(`O valor de Z é ${(num1**2) + (num2**2)}`);
 }
+
+function questao11() {
+    var numeros = [];
+
+    for (i = 0; i < 3; i++) {
+        numeros.push(parseInt(prompt("Digite um número!")));
+    }
+
+    var numeros_ord = numeros.sort(function(a, b) { return a - b});
+    
+    document.write(numeros_ord);
+}

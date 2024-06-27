@@ -229,3 +229,90 @@ function questao16() {
 
     document.write(`O somatório dos números ímpares entre 100 e 200 é ${soma}`);
 }
+
+function questao17() {
+    var numero_int = [];
+    var maior = 0;
+    var menor;
+    var i = 0;
+
+    while (i < 20) {
+        numero_int.push(parseInt(Math.random() * 100));
+        i++;
+    } 
+
+    menor = numero_int[0];
+
+    i = 0;
+    while (i <= numero_int.length) {
+        if (numero_int[i] >= maior) {
+            maior = numero_int[i];
+        } else if (numero_int[i] < menor) {
+            menor = numero_int[i];
+        }
+        i++;
+    }
+
+    document.write(`Os números gerados foram ${numero_int}, o maior número da lista é ${maior} e o menor número da lista é ${menor}`)
+}
+
+//Questão 18 é parecida com a questão 14
+
+function questao19() {
+    var numero1 = parseInt(prompt("Informe o primeiro número da multiplicação!"));
+    var numero2 = parseInt(prompt("informe o segundo número!"));
+    var total = 0;
+
+    var i = 0;
+    while (i < numero2) {
+        total += numero1;
+        i++;
+    }
+
+    console.log(total);
+}
+
+function questao20() {
+    var num_positivo = [];
+    var num = parseInt(prompt("Digite um número positivo!"));
+    var media = 0;
+    var soma = 0;
+
+    while (num > 0) {
+        num_positivo.push(num);
+        num = parseInt(prompt("Digite outro número positivo"));
+    }
+
+    for (i = 0; i < num_positivo.length; i++) {
+        soma += num_positivo[i];
+    }
+
+    media = soma / num_positivo.length;
+    
+    document.write(`A média dos números informados é ${media}`);
+
+
+}
+
+function questao21() {
+    var nota1 = [];
+    var nota2 = [];
+    var media = [];
+
+    var i = 0;
+    do {
+        nota1.push(parseInt(Math.random() * 10));
+        nota2.push(parseInt(Math.random() * 10));
+        //console.log(nota1);
+        //console.log(nota2);
+        i++;//media.push((nota1[i] + nota2[i])/2);
+    } while (i < 49) {
+        nota1.push(parseInt(Math.random() *10));
+        nota2.push(parseInt(Math.random() *10));
+    }
+
+    for (x = 0; x < nota1.length; x++) {
+        media.push((nota1[x] + nota2[x])/2);
+        document.write(`A primeira nota foi ${nota1[x]}, a segunda nota foi ${nota2[x]} e a média foi ${media[x]} <br>`);
+    }
+}

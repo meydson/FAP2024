@@ -130,3 +130,102 @@ function questao11() {
     
     document.write(numeros_ord);
 }
+
+function questao12() {
+    var numeros = [];
+    var contador = 0;
+    var repetidos = [];
+
+    for (i = 0; i < 10; i++) {
+        numeros.push(parseInt(Math.random() * 10));
+    }
+    for (i = 0; i <= numeros.length; i++) {
+        for (j = i + 1; j <= numeros.length - 1; j++) {
+            if (numeros[i] == numeros[j]) {
+                contador++;
+                repetidos.push(numeros[i]);
+            //console.log(numeros[i] + " " + numeros[j])
+            }
+        }
+    }
+    document.write(`A lista gerada foi ${numeros} e nela há ${contador} numeros repetidos, são eles ${repetidos}`);
+}
+
+function questao13() {
+    var dia = parseInt(prompt("Informe um número de 1 à 7 referente aos dias da semana!"));
+
+    switch (dia) {
+        case 1:
+            document.write("Domingo");
+            break;
+        case 2:
+            document.write("Segunda-feira");
+            break;
+        case 3:
+            document.write("Terça-feira");
+            break;
+        case 4:
+            document.write("Quarta-feira");
+            break;
+        case 5:
+            document.write("Quinta-feira");
+            break;
+        case 6:
+            document.write("Sexta-feira");
+            break;
+        case 7:
+            document.write("Sábado");
+            break;
+        default:
+            alert("O número informado não está entre 1 e 7, tente novamente");
+            break;
+    }
+}
+
+function questao14() {
+    var nota1 = [];
+    var nota2 = [];
+    var media = [];
+
+    i = 0;
+    while (i < 50) {
+        nota1.push(parseInt(Math.random() * 10));
+        nota2.push(parseInt(Math.random() * 10));
+        media.push((nota1[i] + nota2[i])/2);
+        document.write(`A primeira nota foi ${nota1[i]}, a segunda nota foi ${nota2[i]} e a média foi ${media[i]} <br>`);
+        i++;
+    }
+}
+
+function questao15() {
+    var numeros = [];
+    var soma = 0;
+    i = 0;
+
+    while (i < 50) {
+        numeros.push(parseInt(Math.random() * 10));
+        if (numeros[i] % 2 == 1) {
+            soma += numeros[i]; 
+        }
+        i++;
+    }
+    
+    document.write(`Os 50 números gerados foram: ${numeros} <br>`)
+    document.write(`O somatório dos 50 números gerados é ${soma}`);
+}
+
+function questao16() {
+    var numeros = [];
+    var soma = 0;
+    i = 0;
+
+    while (i < 100) {
+        numeros.push(i + 100);
+        if (numeros[i] % 2 == 1) {
+            soma += numeros[i]; 
+        }
+        i++;
+    }
+
+    document.write(`O somatório dos números ímpares entre 100 e 200 é ${soma}`);
+}

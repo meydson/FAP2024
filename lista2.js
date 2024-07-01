@@ -1,23 +1,27 @@
 function exercicio1() {
-    document.write("Hello world!");
+    document.write("Hello world!","<br>");
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio2() {
     var numero = parseInt(prompt("Digite um valor!"));
-    document.write(`O cubo do número ${numero} é ${numero * numero * numero}`);
+    document.write(`O cubo do número ${numero} é ${numero * numero * numero}<br>`);
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio4() {
     var base = parseInt(prompt("Informe o valor da base do triângulo!"));
     var altura = parseInt(prompt("informe o valor da altura do triângulo!"));
-    document.write(`O valor da área do triângulo informado é ${(base*altura)/2}`);
+    document.write(`O valor da área do triângulo informado é ${(base*altura)/2}<br>`);
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio5() {
     var raio = parseFloat(prompt("Informe o valor do raio do circulo!"));
 
     document.write(`O perímetro do circulo é ${2*3.14*raio} <br>`);
-    document.write(`A área do circulo é ${3.14*raio**2}`);
+    document.write(`A área do circulo é ${3.14*raio**2}<br>`);
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio6() {
@@ -30,7 +34,8 @@ function exercicio6() {
     numero_novo = parseFloat(numero_novo.join(''));
     numero_novo = numero_novo * Math.sign(numero_original);
 
-    document.write(`O inverso do número digitado é ${numero_novo}`);
+    document.write(`O inverso do número digitado é ${numero_novo} <br>`);
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio7() {
@@ -45,7 +50,8 @@ function exercicio7() {
     }
     palavra = palavra.join('');
 
-    document.write(`A palavra ${palavra} tem ${vogais} vogais!`)
+    document.write(`A palavra ${palavra} tem ${vogais} vogais! <br>`)
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio8() {
@@ -56,7 +62,8 @@ function exercicio8() {
     
     var montante = capital * ((1+juros)**tempo);
 
-    document.write("O total do retorno do investimento é de R$ ",montante.toFixed(2));
+    document.write("O total do retorno do investimento é de R$ ",montante.toFixed(2),"<br>");
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio9() {
@@ -65,7 +72,8 @@ function exercicio9() {
     for (i = num; i > 0; i--) {
         fatorial = fatorial * i;
     }
-    document.write(`O valor fatorial do número informado é ${fatorial}`);
+    document.write(`O valor fatorial do número informado é ${fatorial} <br>`);
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio10() {
@@ -79,7 +87,8 @@ function exercicio10() {
         }
     }
     palavra = palavra.join('');
-    document.write(`Na palavra ${palavra} existem ${contar} letras ${letra}!`);
+    document.write(`Na palavra ${palavra} existem ${contar} letras ${letra}!<br>`);
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }
 
 function exercicio11() {
@@ -97,4 +106,6 @@ function exercicio11() {
     } else {
         document.write(`O número ${num1} é primo!`);
     }
+    document.write("<br>");
+    document.write("<a href='./lista2.html'>Voltar</a>");
 }

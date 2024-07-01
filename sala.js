@@ -11,3 +11,21 @@ function media() {
     document.write(media,"<br>");
     document.write("<a href='./exercicios_sala.html'>Voltar</a>");
 }
+
+function media_btn() {
+    var nota1 = parseInt(prompt("Informe a primeira nota!"));
+    var nota2 = parseInt(prompt("Informe a segunda nota!"));
+    var nota3 = parseInt(prompt("Informe a terceira nota!"));
+    var media = 0;
+
+    function aprovacao(a, b, c) {
+        media = (nota1 + nota2 + nota3)/3;
+        if (media >= 7) {
+            document.write("A média foi: ", media, "<br>", "Resultado: Aprovado");
+        } else {
+            document.write("A média foi: ", media, "<br>", "Resultado: Reprovado");
+        }
+    }
+
+    aprovacao(nota1, nota2, nota3);
+}

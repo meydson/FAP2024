@@ -316,3 +316,4 @@ function questao21() {
         document.write(`A primeira nota foi ${nota1[x]}, a segunda nota foi ${nota2[x]} e a média foi ${media[x]} <br>`);
     }
 }
+

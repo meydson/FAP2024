@@ -19,7 +19,6 @@ header {
     flex-direction: row;
     height: 300px;
     width: 100;
-    
     background-color: black;
 }
 
@@ -44,7 +43,6 @@ body {
 }
 
 .content {
-    
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 5%;
@@ -53,4 +51,18 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
+}
+
+a {
+    padding: 10px;
+	width: 25%;
+	margin: 10px 10px 10px 10px;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #FFF240;
+	background: linear-gradient(to right, rgb(0, 0, 0), rgb(75, 65, 65));
+	cursor: pointer;
+    text-align: center;  
 }

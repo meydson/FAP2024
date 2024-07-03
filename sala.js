@@ -29,3 +29,20 @@ function media_btn() {
 
     aprovacao(nota1, nota2, nota3);
 }
+
+// for of, exibe o conteúdo do Array
+function teste_for_of() {
+    const numeros = [1,2,3,4,5];
+    for(let numero of numeros) {
+      console.log(numero);
+    }
+}
+
+// for in, exibe o índice do array
+
+function teste_for_in() {
+    const numeros = [1,2,3,4,5];
+    for(let numero in numeros) {
+    console.log(numero);
+    }
+}

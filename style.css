@@ -69,5 +69,6 @@ a {
 	color: #FFF240;
 	background: linear-gradient(to right, rgb(0, 0, 0), rgb(93, 85, 85));
 	cursor: pointer;
-    text-align: center;  
+    text-align: center; 
+    text-decoration: none; 
 }

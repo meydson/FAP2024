@@ -60,3 +60,15 @@ function teste_array() {
         }
     }
 }
+
+function soma_array() {
+    let teste = [2,3,4,5,6,7];
+    let soma = 0;
+    //let tamanho = teste.length;
+    //console.log(tamanho);
+    for (i = 0; i < teste.length; i++) {
+        soma = soma + teste[i];
+    }
+
+    console.log(soma);
+}

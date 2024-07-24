@@ -46,3 +46,17 @@ function teste_for_in() {
     console.log(numero);
     }
 }
+
+function teste_array() {
+    let array_teste = [];
+
+    for (i = 0; i <= 3; i++) {
+        array_teste.push(parseInt(prompt("Insira um valor")));
+    }
+
+    for (i = 0; i <= 3; i++) {
+        if (isNaN(array_teste[i])) {
+            console.log("entrou no if");
+        }
+    }
+}

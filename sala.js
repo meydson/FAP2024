@@ -67,8 +67,21 @@ function soma_array() {
     //let tamanho = teste.length;
     //console.log(tamanho);
     for (i = 0; i < teste.length; i++) {
-        soma = soma + teste[i];
+        soma += teste[i];
     }
 
     console.log(soma);
+}
+
+function media_array() {
+    let teste = [1,5,7,10];
+    let soma = 0;
+    let media = 0;
+
+    for (i = 0; i < teste.length; i++) {
+        soma += teste[i];
+    }
+
+    media = soma / teste.length;
+    console.log(media)
 }

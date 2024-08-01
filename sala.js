@@ -85,3 +85,49 @@ function media_array() {
     media = soma / teste.length;
     console.log(media)
 }
+
+// Função criação array
+function criarArray() {
+    let listaElementos = Array()
+    
+    listaElementos['frutas'] = ['Banana', 'jaca', 'Uvas', 'Abacaxi', 'Manga']
+    listaElementos['pessoas'] = ['Flavio', 'José', 'Maria', 'Josefa', 'Gustavo']
+    
+    //adicionar elemento no final do array
+    listaElementos['frutas'].push('laranja')
+    
+    //adicionar elemento no inicio do array
+    listaElementos['pessoas'].unshift('Meydson')
+
+    //remover elemento no final do array
+    listaElementos['pessoas'].pop()
+
+    //remover elemento no inicio do array
+    listaElementos['frutas'].shift()
+
+    console.log(listaElementos)
+}
+
+function matriz() {
+    let matriz = [[1,2,1,24],[8,11,9,4],[7,0,7,27],[7,4,28,14],[3,10,26,7]];
+
+    for (i = 0; i < matriz.length ; i++) {
+        for (j = 0; j < matriz[i].length; j++) {
+            console.log(matriz[i][j]);
+        }
+    }
+}
+
+function soma_matriz() {
+    let matriz = [[1,2,1,24],[8,11,9,4],[7,0,7,27],[7,4,28,14],[3,10,26,7]];
+    let soma = 0;
+
+    for (i = 0; i < matriz.length ; i++) {
+        for (j = 0; j < matriz[i].length; j++) {
+            soma += matriz[i][j];
+            console.log(matriz[i][j]);
+        }
+    }
+
+    console.log("Soma " + soma);
+}

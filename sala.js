@@ -131,3 +131,45 @@ function soma_matriz() {
 
     console.log("Soma " + soma);
 }
+
+function media_matriz() {
+    let matriz = [[1,2,1,24],[8,11,9,4],[7,0,7,27],[7,4,28,14],[3,10,26,7]];
+    let soma = 0;
+    let media = 0;
+
+    for (i = 0; i < matriz.length ; i++) {
+        for (j = 0; j < matriz[i].length; j++) {
+            soma += matriz[i][j];
+            console.log(matriz[i][j]);
+        }
+        media = soma / matriz[i].length;
+        console.log("Media = "+ media);
+        soma = 0;
+    }
+}
+
+function fila() {
+    let fila = Array()
+        fila.push(1)
+        fila.push(2)
+        fila.push(3)
+        fila.push(4)
+        fila.push(parseInt(prompt("Insira um número")))
+
+    function exibir_fila() {
+        for (i = 0; i < fila.length; i++) {
+            console.log(fila[i]);
+        }
+    }
+
+    exibir_fila();
+
+    if (fila.length <= 0) {
+        console.log("A fila está vazia");
+    } else {
+        fila.shift();
+        exibir_fila();
+    }
+
+    console.log("O tamanho da fila é: "+fila.length)
+}

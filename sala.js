@@ -173,3 +173,22 @@ function fila() {
 
     console.log("O tamanho da fila é: "+fila.length)
 }
+
+let pilha = [];
+let contador = 0;
+
+function addPilha() {
+    pilha.push(contador);
+    contador++;
+    console.log(pilha);
+}
+
+function remPilha() {
+    pilha.pop();
+    contador--;
+    console.log(pilha)
+}
+
+function exibirPilha() {
+    console.log(pilha);
+}

@@ -192,3 +192,6 @@ function remPilha() {
 function exibirPilha() {
     console.log(pilha);
 }
+
+
+

@@ -50,3 +50,34 @@ function criarProdutoPrivado() {
         
 }
 
+class Animal {
+    constructor(nome,idade,patas){
+        this.nome = nome;
+        this.idade = idade;
+        this.patas = patas;
+    }
+
+    corre() {
+        return "sim";
+    }
+
+    dorme() {
+        return "sim";
+    }
+}
+
+class Cachorro extends Animal() {
+    super(nome,idade,patas);
+    constructor(raca) {
+        this.raca = raca;
+    }
+
+    late() {
+        return "alto";
+    }
+}
+
+function heranca() {
+    const dog = new Cachorro("Caramelo",10,4,"vira-lata");
+    console.log(dog)
+}

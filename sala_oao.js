@@ -16,6 +16,9 @@ function criarProduto() {
     console.log(compra.getPreco())
 }
 
+// ENCAPSULAMENTO
+// Para um atributo ou método privado, convencina-se o uso do "_" antes do nome da variável
+
 class ProdutoPrivate {
     constructor(nome, preco) {
         this._nome = nome;
@@ -46,3 +49,4 @@ function criarProdutoPrivado() {
     console.log(produto.retornarPreco);
         
 }
+

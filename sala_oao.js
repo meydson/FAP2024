@@ -50,6 +50,8 @@ function criarProdutoPrivado() {
         
 }
 
+let dog = 0;
+
 class Animal {
     constructor(nome,idade,patas){
         this.nome = nome;
@@ -58,26 +60,26 @@ class Animal {
     }
 
     corre() {
-        return "sim";
+        console.log("Corre");
     }
 
     dorme() {
-        return "sim";
+        console.log("Dorme");
     }
 }
 
-class Cachorro extends Animal() {
-    super(nome,idade,patas);
-    constructor(raca) {
+class Cachorro extends Animal {
+    constructor(nome,idade,patas,raca) {
+        super(nome,idade,patas);
         this.raca = raca;
     }
 
     late() {
-        return "alto";
+        console.log("Late");
     }
 }
 
 function heranca() {
-    const dog = new Cachorro("Caramelo",10,4,"vira-lata");
+    dog = new Cachorro("Caramelo",10,4,"vira-lata");
     console.log(dog)
 }
